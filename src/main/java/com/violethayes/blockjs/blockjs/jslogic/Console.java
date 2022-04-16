@@ -6,10 +6,10 @@ public class Console {
     }
 
     public void warn(final String message) {
-        System.out.println(message);
+        System.out.println("[WARNING] " + message);
     }
 
     public void error(final String message) {
-        System.err.println(message);
+        System.err.println("[ERROR] " + message);
     }
 }

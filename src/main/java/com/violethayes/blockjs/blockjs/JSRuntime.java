@@ -1,6 +1,7 @@
 package com.violethayes.blockjs.blockjs;
 
 import com.eclipsesource.v8.*;
+import com.violethayes.blockjs.blockjs.jslogic.Chat;
 import com.violethayes.blockjs.blockjs.jslogic.Console;
 
 public class JSRuntime {
@@ -24,5 +25,12 @@ public class JSRuntime {
         consoleObj.registerJavaMethod(console, "log", "log", new Class<?>[]{String.class});
         consoleObj.registerJavaMethod(console, "error", "error", new Class<?>[]{String.class});
         consoleObj.registerJavaMethod(console, "warn", "warn", new Class<?>[]{String.class});
+
+        Chat chat = new Chat();
+        V8Object chatObj = new V8Object(runtime);
+
+        runtime.add("chat", chatObj);
+
+        chatObj.registerJavaMethod(chat, "send", "send", new Class<?>[]{String.class});
     }
 }

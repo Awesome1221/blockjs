@@ -5,6 +5,8 @@
 *.ipr
 *.iws
 
+BlockJSScripts/
+
 # IntelliJ
 out/
 
@@ -112,5 +114,6 @@ buildNumber.properties
 # Common working directory
 run/
 
-# User specific
-BlockJSScripts/
+# NPM Things
+**/node_modules/
+src/jsmodule/lib/

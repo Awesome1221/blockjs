@@ -12,5 +12,7 @@ public class JSRunner {
 
         JSRuntime runtime = new JSRuntime();
         runtime.run("console.log('Hello World!');");
+        runtime.run("console.warn('Testing');");
+        runtime.run("console.error('Testing');");
     }
 }
