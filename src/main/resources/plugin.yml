@@ -1,0 +1,6 @@
+name: BlockJS
+version: '${project.version}'
+main: com.violethayes.blockjs.blockjs.BlockJS
+api-version: 1.18
+authors: [ VioletHayes ]
+description: A Minecraft plugin to use JavaScript or TypeScript code on your minecraft server.
